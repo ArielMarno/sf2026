@@ -1,0 +1,167 @@
+.privacy-policy{
+    width: 100%;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.privacy-policy nav.scrolled{
+    background-color: rgb(250, 250, 250, 0.5);
+    backdrop-filter: blur(35px); /* aparece el bg haciendo scroll */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.privacy-policy nav .logo{
+    color: var(--white);
+}
+
+.privacy-policy nav.scrolled .logo{
+    color: var(--blue);
+}
+
+.privacy-policy nav .cta-btn_white{
+    border-color: var(--white);
+    color: var(--white);
+} 
+
+.privacy-policy nav .line {
+  fill: none;
+  stroke: var(--white);
+}
+
+.privacy-policy nav.scrolled .line {
+  fill: none;
+  stroke: var(--blue);
+}
+
+.privacy-policy .policy{
+    background: var(--gradient);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.privacy-policy .policy .banner{
+    padding-left: 3rem;
+    padding-bottom: 3rem;
+    min-height: 40svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.policy .banner h2{
+    width: 100%;
+    font-family: var(--title);
+    font-weight: 600;
+    font-size: clamp(2rem, 1.3333rem + 1.3889vw, 3rem);
+    color: var(--white);
+}
+
+.privacy-policy .policy section{
+    padding: 3rem;
+    height: auto;
+    width: 100%;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 3rem;
+}
+
+.privacy-policy article{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 7rem;
+}
+
+.privacy-policy .title{
+    min-width: 550px;
+}
+
+.privacy-policy .title h4{
+    font-weight: 500;
+    color: var(--black);
+}
+
+.privacy-policy .text{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.privacy-policy .text p{
+    font-weight: 400;
+    font-size: clamp(1rem, 0.8667rem + 0.2778vw, 1.2rem);
+}
+
+.privacy-policy .text p span{
+    font-weight: 500;
+}
+
+@media(max-width: 1440px){
+
+    .privacy-policy article{
+        gap: 3rem;
+    }
+
+    .privacy-policy .title{
+        min-width: 300px;
+    }
+}
+
+@media(max-width: 1000px){
+
+    .privacy-policy .policy .banner{
+        padding-left: 2rem;
+    }
+
+    .privacy-policy .policy section{
+        padding: 3rem 2rem;
+        gap: 2rem;
+    }
+
+    .privacy-policy .title{
+        min-width: 270px;
+    }
+}
+
+@media(max-width: 768px){
+
+    .privacy-policy .policy .banner{
+        padding-left: 1rem;
+    }
+
+    .privacy-policy .policy section{
+        padding: 3rem 1rem;
+        gap: 3rem;
+    }
+
+    .privacy-policy article{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .privacy-policy .title{
+        min-width: none;
+        width: 100%;
+    }
+
+    .privacy-policy .title h4{
+        font-size: clamp(1.2rem, 1.0041rem + 0.8247vw, 1.4rem);
+    }
+
+    .privacy-policy .title h4 br{
+        display: none;
+    }
+}

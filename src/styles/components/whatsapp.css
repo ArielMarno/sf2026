@@ -1,0 +1,57 @@
+.wsp{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.wsp .button {
+  position: relative;
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  background: var(--gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.wsp svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: spin 15s linear infinite;
+}
+
+.wsp text {
+  font-family: var(--text);  
+  font-size: 0.93rem;
+  fill: var(--lima);
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.wsp .center-star img {
+    width: 35px;
+    height: 35px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media(max-width: 768px){
+    .wsp .button {
+        width: 90px;
+        height: 90px;
+    }
+
+    .wsp .center-star img {
+        width: 25px;
+        height: 25px;
+    }
+}

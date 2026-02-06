@@ -1,0 +1,254 @@
+.home-portfolio{
+    width: 100%;
+    min-height: 100svh;
+    padding: 3rem;
+    background: var(--white);
+}
+
+.home-portfolio main{
+    background: var(--gradient);
+    width: 100%;
+    height: 100%;
+    padding: 5rem;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+.home-portfolio .title{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.home-portfolio .title h4{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    color: var(--silver)
+}
+
+.home-portfolio .title h4 img{
+    width: 20px;
+    height: auto;
+}
+
+.home-portfolio .title h2{
+    color: var(--white);
+    font-weight: 400;
+}
+
+.home-portfolio .title h2 span{
+    font-weight: 550;
+}
+
+.home-portfolio .projects-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+    justify-items: flex-start;
+    gap: 5rem;
+}
+
+.projects-container section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.projects-container article{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: autoShowAnimation both;
+    animation-timeline: view(70% 5%)
+}
+
+@keyframes autoShowAnimation{
+    from{
+        opacity: 0;
+        transform: translateY(100px) scale(0.3);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.projects-container .second-column{
+    margin-top: 350px;
+}
+
+.projects-container .img-container{
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    border-radius: 25px;
+}
+
+.home-portfolio .img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+    border-radius: 25px;
+}
+
+.home-portfolio .description{
+    z-index: 2;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.home-portfolio .description h5{
+    color: var(--white);
+    background: rgb(33, 33, 33, 0.9);
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-family: var(--text);
+    font-size: clamp(0.8rem, 0.5333rem + 0.5556vw, 1.2rem);
+    font-weight: 500;
+}
+
+.projects-container .content{
+    width: 100%;
+    height: fit-content;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--white);
+    font-family: var(--text);
+}
+
+.projects-container .content h4{
+    font-size: clamp(1.3rem, 1.0333rem + 0.5556vw, 1.7rem);
+    font-weight: 500;
+}
+
+.projects-container .content p{
+    color: var(--white);
+    font-weight: 400;
+}
+
+.home-portfolio main a{
+    align-self:center;
+}
+
+@media(max-width:1500px){
+
+    .home-portfolio{
+        padding: 3rem 2rem;
+    }
+
+    .home-portfolio main{
+        padding: 3rem;
+        gap: 2rem;
+    }
+
+    .home-portfolio .projects-container{
+        gap: 4rem;
+    }
+
+    .projects-container .second-column{
+        margin-top: 250px;
+    }
+}
+
+@media(max-width:1200px){
+
+    .home-portfolio{
+        padding: 3rem 1rem;
+    }
+
+    .home-portfolio main{
+        padding: 2rem;
+        gap: 1rem;
+    }
+
+    .home-portfolio .projects-container{
+        gap: 3rem;
+    }
+
+    .projects-container .second-column{
+        margin-top: 200px;
+    }
+
+    .home-portfolio main a{
+        margin-top: 2rem;
+    }
+}
+
+@media(max-width:1000px){
+
+    .home-portfolio{
+        padding: 3rem 0;
+    }
+
+    .home-portfolio main{
+        min-height: 100svh;
+        padding: 2rem;
+        gap: 1rem;
+        border-radius: 0;
+    }
+
+    .home-portfolio .projects-container{
+        gap: 2rem;
+    }
+}
+
+
+@media(max-width:768px){
+
+    .home-portfolio main{
+        padding: 3rem 1rem;
+    }
+
+    .home-portfolio .title h4 img{
+        width: 15px;
+        height: auto;
+    }
+
+    .home-portfolio .projects-container{
+        gap: 2rem;
+        grid-template-columns: 1fr;
+    }
+
+    .projects-container section{
+        gap: 2rem;
+    }
+
+    .projects-container .second-column{
+        margin-top: 0;
+    }
+
+    .projects-container .content p{
+        font-size: 0.9rem;
+    }
+}
+
+@media(max-width: 480px){
+    .home-portfolio .description{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}

@@ -1,0 +1,334 @@
+:root {
+
+  /*fuentes*/
+  --title: "Montserrat", sans-serif;
+  --text: "Poppins", sans-serif;
+  --logo: "Agbalumo", system-ui;
+
+  /*colores*/
+  --blue: #2C4499;
+  --lima: #D7FF7B;
+  --white: #FAFAFA;
+  --black: #212121;
+  --grey: #6b6b6e;
+  --silver: #cacaca;
+  --gradient: linear-gradient(347deg, rgba(23, 37, 87, 1) 0%, rgba(33, 33, 33, 1) 100%);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body{
+  position: relative;
+}
+
+
+.title h1{
+  font-family: var(--title);
+  font-size: clamp(2.5rem, 1.5rem + 2.0833vw, 4rem);
+  font-weight: 600;
+  text-align: flex-start;
+  color: var(--black);
+}
+
+.title h2{
+  font-family: var(--title);
+  font-size: clamp(2rem, 1.3333rem + 1.3889vw, 3rem);
+  font-weight: 600;
+  text-align: flex-start;
+  color: var(--black);
+}
+
+.title h4{
+  font-family: var(--text);
+  font-size: clamp(1.1rem, 0.8333rem + 0.5556vw, 1.5rem);
+  font-weight: 400;
+  text-align: flex-start;
+  color: #000;
+}
+
+.text{
+  font-family: var(--text);
+  font-size: clamp(1rem, 0.6667rem + 0.4444vw, 1.2rem);
+  font-weight: 400;
+  color: var(--black);
+}
+
+.cta-btn_black, .cta-btn_white{
+  width: fit-content;
+  display: flex;
+  padding: 0.5rem 1.2rem;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  border-radius: 15px;
+  font-family: var(--text);
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+
+.cta-btn_black{
+  border: 2px solid var(--white);
+  color: var(--white);
+}
+
+.cta-btn_white{
+  border: 2px solid var(--black);
+  color: var(--black);
+}
+
+.cta-btn_black img, .cta-btn_white img{
+  display: none;
+  width: 11px;
+  height: auto;
+}
+
+.cta-btn_white:hover{
+  background: var(--black);
+  color: var(--white);
+  border-color: var(--black);
+  font-weight: 600;
+}
+
+.cta-btn_black:hover{
+  border: 2px solid var(--lima);
+  background: var(--lima);
+  color: var(--black);
+  font-weight: 600;
+}
+
+.cta-btn_black:hover img, .cta-btn_white:hover img{
+  display: flex;
+}
+
+/*plus button*/ 
+.wrapper {
+  --width: 90px;
+  --height: 90px;
+  width: var(--width);
+  height: var(--height);
+  position: relative;
+}
+
+.wrapper .btn {
+  width: var(--width);
+  height: var(--height);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-animation: plus-animation-reverse 0.5s ease-out forwards;
+  animation: plus-animation-reverse 0.5s ease-out forwards;
+}
+
+.wrapper .btn::before,
+.wrapper .btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: var(--black);
+}
+
+.wrapper .btn::before {
+  width: 4px;
+  height: 28px;
+}
+
+.wrapper .btn::after {
+  width: 28px;
+  height: 4px;
+}
+
+.wrapper input {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  position: absolute;
+  z-index: 5;
+  opacity: 0;
+}
+
+.wrapper input:checked ~ .btn {
+  -webkit-animation: plus-animation 0.5s ease-out forwards;
+  animation: plus-animation 0.5s ease-out forwards;
+}
+
+/*animations for plus btn*/
+  @-webkit-keyframes pang-animation {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    40% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1.1);
+      opacity: 0;
+    }
+  }
+
+  @keyframes pang-animation {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    40% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1.1);
+      opacity: 0;
+    }
+  }
+
+  @-webkit-keyframes plus-animation {
+    0% {
+      transform: rotate(0) scale(1);
+    }
+    20% {
+      transform: rotate(60deg) scale(0.93);
+    }
+    55% {
+      transform: rotate(35deg) scale(0.97);
+    }
+    80% {
+      transform: rotate(48deg) scale(0.94);
+    }
+    100% {
+      transform: rotate(45deg) scale(0.95);
+    }
+  }
+
+  @keyframes plus-animation {
+    0% {
+      transform: rotate(0) scale(1);
+    }
+    20% {
+      transform: rotate(60deg) scale(0.93);
+    }
+    55% {
+      transform: rotate(35deg) scale(0.97);
+    }
+    80% {
+      transform: rotate(48deg) scale(0.94);
+    }
+    100% {
+      transform: rotate(45deg) scale(0.95);
+    }
+  }
+
+  @-webkit-keyframes plus-animation-reverse {
+    0% {
+      transform: rotate(45deg) scale(0.95);
+    }
+    20% {
+      transform: rotate(-15deg);
+    }
+    55% {
+      transform: rotate(10deg);
+    }
+    80% {
+      transform: rotate(-3deg);
+    }
+    100% {
+      transform: rotate(0) scale(1);
+    }
+  }
+
+  @keyframes plus-animation-reverse {
+    0% {
+      transform: rotate(45deg) scale(0.95);
+    }
+    20% {
+      transform: rotate(-15deg);
+    }
+    55% {
+      transform: rotate(10deg);
+    }
+    80% {
+      transform: rotate(-3deg);
+    }
+    100% {
+      transform: rotate(0) scale(1);
+    }
+  }
+
+  @-webkit-keyframes stretch-animation {
+    0% {
+      transform: scale(1, 1);
+    }
+    10% {
+      transform: scale(1.1, 0.9);
+    }
+    30% {
+      transform: scale(0.9, 1.1);
+    }
+    50% {
+      transform: scale(1.05, 0.95);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+
+  @keyframes stretch-animation {
+    0% {
+      transform: scale(1, 1);
+    }
+    10% {
+      transform: scale(1.1, 0.9);
+    }
+    30% {
+      transform: scale(0.9, 1.1);
+    }
+    50% {
+      transform: scale(1.05, 0.95);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+
+
+
+@media(max-width: 580px){
+
+  .cta-btn_black, .cta-btn_white{
+    padding: 0.4rem 1.1rem;
+    border-radius: 7px;
+    font-size: 1rem;
+  }
+
+  .cta-btn_white:hover{
+    background: transparent;
+    color: var(--black);
+    font-weight: 500;
+  }
+
+  .cta-btn_black:hover{
+    background: transparent;
+    border: 2px solid var(--white);
+    color: var(--white);
+    font-weight: 500;
+  }
+
+  .cta-btn_black:hover img, .cta-btn_white:hover img{
+    display: none;
+  }
+}
+
+/* {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+  }

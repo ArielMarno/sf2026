@@ -1,0 +1,222 @@
+.contact-us{
+   min-height: 100svh;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   background: var(--gradient);
+}
+
+.contact-us nav.scrolled{
+    background-color: rgb(250, 250, 250, 0.5);
+    backdrop-filter: blur(35px); /* aparece el bg haciendo scroll */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.contact-us nav .logo{
+    color: var(--white);
+}
+
+.contact-us nav.scrolled .logo{
+    color: var(--blue);
+}
+
+.contact-us nav .cta-btn_white{
+    border-color: var(--white);
+    color: var(--white);
+} 
+
+.contact-us nav .line {
+  fill: none;
+  stroke: var(--white);
+}
+
+.contact-us nav.scrolled .line {
+  fill: none;
+  stroke: var(--blue);
+}
+
+.contact-us main{
+    min-height: 100svh;
+    height: 100%;
+    width: 100%;
+    margin-top: 3rem;
+    padding: 5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.contact-us .title{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.contact-us .title h4{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    color: var(--silver);
+}
+
+.contact-us .title h4 img{
+    width: 20px;
+    height: auto;
+}
+
+.contact-us .title h2{
+    color: var(--white);
+}
+ .contact-us .title h2 br{
+        display: none;
+    }
+
+.contact-us form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.contact-us form section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.contact-us form input{
+    width: 1000px;
+    height: 80px;
+    border-radius: 15px;
+    border: none;
+    background: rgb(107, 107, 110, 0.9);
+    padding: 1rem 2rem;
+    font-family: var(--text);
+    font-size: 1.2rem;
+    color: var(--white);
+}
+
+.contact-us form input::placeholder{
+    color: var(--white);
+}
+
+/*elimina interfaz predeterminada para el input number donde se ingresa el número de teléfono*/
+/* Para Chrome, Safari, Edge (WebKit) */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.contact-us form p{
+    max-width: 1000px;
+    text-align: flex-start;
+    font-family: var(--text);
+    font-size: 1rem;
+    color: var(--silver);
+}
+
+.contact-us form p a{
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--silver);
+    transition: all 0.3s ease-out;
+}
+
+.contact-us form p a:hover{
+    color: var(--lima);
+}
+
+.contact-us form button{
+    cursor: pointer;
+}
+
+.contact-us article{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.contact-us article h5{
+    max-width: 800px;
+    font-family: var(--text);
+    font-size: clamp(1.2rem, 1.0667rem + 0.2778vw, 1.4rem);
+    color: var(--white);
+    font-weight: 400;
+}
+
+@media(max-width: 1440px){
+
+    .contact-us form input, .contact-us form p{
+        max-width: 800px;
+    } 
+}
+
+@media(max-width: 1000px){
+
+    .contact-us main{
+        padding: 5rem 2rem;
+    }
+
+    .contact-us form input, .contact-us form p, .contact-us article h5{
+        max-width: 700px;
+    }
+}
+
+@media(max-width: 768px){
+
+    .contact-us main{
+        padding: 5rem 1rem;
+    }
+
+    .contact-us form input{
+        max-width: 100%;
+        width: 90vw;
+        font-size: clamp(1rem, 0.8041rem + 0.8247vw, 1.2rem);
+    }
+
+    .contact-us form p{
+        max-width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .contact-us article h5{
+        max-width: 100%;
+        font-size: clamp(1rem, 0.8041rem + 0.8247vw, 1.2rem);
+    }    
+
+}
+
+@media(max-width: 580px){
+
+    .contact-us .title h2 br{
+        display: flex;
+    }
+
+    .contact-us form p{
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width: 380px){
+
+    .contact-us form input{
+        max-width: 300px;
+        width: 100%;
+        padding: 1rem;
+        height: 60px;
+    }
+}
+
+

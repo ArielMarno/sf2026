@@ -1,0 +1,183 @@
+.terms-and-conditions{
+    width: 100%;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.terms-and-conditions nav.scrolled{
+    background-color: rgb(250, 250, 250, 0.5);
+    backdrop-filter: blur(35px); /* aparece el bg haciendo scroll */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.terms-and-conditions nav .logo{
+    color: var(--white);
+}
+
+.terms-and-conditions nav.scrolled .logo{
+    color: var(--blue);
+}
+
+.terms-and-conditions nav .cta-btn_white{
+    border-color: var(--white);
+    color: var(--white);
+} 
+
+.terms-and-conditions nav .line {
+  fill: none;
+  stroke: var(--white);
+}
+
+.terms-and-conditions nav.scrolled .line {
+  fill: none;
+  stroke: var(--blue);
+}
+
+.terms-and-conditions .terms{
+    background: var(--gradient);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.terms-and-conditions .terms .banner{
+    padding-left: 3rem;
+    padding-bottom: 3rem;
+    min-height: 40svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.terms .banner h2{
+    width: 100%;
+    font-family: var(--title);
+    font-weight: 600;
+    font-size: clamp(2rem, 1.3333rem + 1.3889vw, 3rem);
+    color: var(--white);
+}
+
+.terms-and-conditions .terms section{
+    padding: 3rem;
+    height: auto;
+    width: 100%;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 3rem;
+}
+
+.terms-and-conditions article{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 7rem;
+}
+
+.terms-and-conditions .title{
+    min-width: 550px;
+}
+
+.terms-and-conditions .title h4{
+    font-weight: 500;
+    color: var(--black);
+}
+
+.terms-and-conditions .text{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.terms-and-conditions .text ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+
+.terms-and-conditions .text p{
+    font-weight: 500;
+    font-size: clamp(1rem, 0.8667rem + 0.2778vw, 1.2rem);
+}
+
+.terms-and-conditions .text li{
+    font-size: clamp(0.9rem, 0.7667rem + 0.2778vw, 1.1rem);
+}
+
+.terms-and-conditions .text li span{
+    font-weight: 500;
+}
+
+@media(max-width: 1440px){
+
+    .terms-and-conditions article{
+        gap: 3rem;
+    }
+
+    .terms-and-conditions .title{
+        min-width: 300px;
+    }
+}
+
+@media(max-width: 1000px){
+
+    .terms-and-conditions .terms .banner{
+        padding-left: 2rem;
+    }
+
+    .terms-and-conditions .terms section{
+        padding: 3rem 2rem;
+        gap: 2rem;
+    }
+
+    .terms-and-conditions .title{
+        min-width: 270px;
+    }
+}
+
+@media(max-width: 768px){
+
+    .terms-and-conditions .terms .banner{
+        padding-left: 1rem;
+    }
+
+    .terms-and-conditions .terms section{
+        padding: 3rem 1rem;
+        gap: 3rem;
+    }
+
+    .terms-and-conditions article{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .terms-and-conditions .title{
+        min-width: none;
+        width: 100%;
+    }
+
+    .terms-and-conditions .title h4{
+        font-size: clamp(1.2rem, 1.0041rem + 0.8247vw, 1.4rem);
+    }
+
+    .terms-and-conditions .title h4 br{
+        display: none;
+    }
+
+    .terms-and-conditions ul li{
+        list-style: none;
+    }
+}

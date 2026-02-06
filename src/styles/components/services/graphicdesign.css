@@ -1,0 +1,249 @@
+.graphic-design{
+  background: var(--white);
+  width: 100%;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5rem 0;
+}
+
+.graphic-design main{
+  padding: 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch; 
+  justify-content: space-between;
+  position: relative;
+}
+
+.graphic-design section{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2.5rem;
+}
+
+.graphic-design section .title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2.5rem;
+  min-width: 350px; 
+  position: relative;
+}
+
+#title {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px; 
+  margin: 0;
+  z-index: 10;
+  align-self: flex-start; 
+}
+
+.graphic-design .img-grid{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.graphic-design .img-grid article{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.graphic-design .box{
+  background: var(--grey);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.graphic-design .box img, .graphic-design .box video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.graphic-design .box.large{
+  width: 400px;
+  height: 350px;
+}
+
+.graphic-design .box.small{
+  width: 400px;
+  height: 250px;
+}
+
+.graphic-design .text-container{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.graphic-design article .text{
+  font-size: clamp(1.3rem, 1.1667rem + 0.2778vw, 1.5rem);
+  max-width: 800px;
+}
+
+.graphic-design article .text span{
+  font-weight: 500;
+}
+
+.service-name{
+  min-width: 800px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px solid var(--black);
+}
+
+.service-name h3{
+  color: var(--black);
+  font-family: var(--text);
+  font-size: clamp(1.1rem, 0.8333rem + 0.5556vw, 1.5rem);
+  font-weight: 500;
+  padding: 1rem 0;
+}
+
+.content .text{
+  max-width: 800px;
+  margin-bottom: 1rem;
+}
+
+@media(max-width: 1300px){
+
+  .graphic-design main{
+    padding: 3rem 2rem;
+  }
+
+  .graphic-design .img-grid{
+    max-width: 600px;
+  }
+
+  .graphic-design .box.large{
+    width: 100%;
+    height: 350px;
+  }
+
+  .graphic-design .box.small{
+    width: 100%;
+    height: 250px;
+  }
+
+  .service-name{
+    min-width: 600px;
+  }
+
+  .graphic-design article .text, .content .text{
+    max-width: 600px;
+  }
+}
+
+@media(max-width: 1000px){
+
+  .graphic-design{
+      padding: 3rem 0;
+  }
+
+  .graphic-design main{
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .graphic-design .img-grid{
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .service-name{
+    min-width: 90vw;
+  }
+
+  .graphic-design article .text {
+    max-width: 100%;
+  }
+
+  .content .text{
+    max-width: 90vw;
+  }
+
+  .graphic-design section.title {
+    min-width: 0;
+  }
+  
+  #title{
+    top: 0;
+    position: relative;
+  }
+}
+
+@media(max-width: 768px){
+  
+  .graphic-design main{
+    width: 100%;
+    padding: 3rem 1rem;
+  }
+
+  .graphic-design article .text{
+    font-size: 1.2rem;
+  }
+
+}
+
+@media(max-width: 480px){
+
+  .graphic-design .img-grid{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+  }
+
+  .graphic-design .img-grid article{
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .graphic-design{
+    height: 100%;
+  }
+
+  .graphic-design .box{
+    width: 100%;
+    height: 300px;
+  }
+
+  .graphic-design .box.large, .graphic-design .box.small{
+    width: 100%;
+    height: 300px;
+  }
+
+  .service-name{
+    min-width: 80vw;
+  }
+
+  .graphic-design article .text{
+    font-size: 1.1rem;
+  }
+
+  .content .text{
+    max-width: 80vw;
+  }
+
+}
