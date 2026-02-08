@@ -66,9 +66,9 @@ const Navbar = () => {
                 <p>Marketing Digital</p>
             </div>
             <div className='socials'>
-              <a href="https://www.linkedin.com/company/sunfloweragencia/" target='_blank' rel= "noopener noreferrer" aria-label='Perfil de LinkedIn' title='Perfil de LinkedIn'><img src={lkd} alt="linkedin" /></a>
-              <a href="https://www.instagram.com/sunfloweragencia/" target='_blank' rel= "noopener noreferrer" aria-label='Perfil de Instagram' title='Perfil de Instagram'><img src={ig} alt="instagram" /></a>
-              <a href="https://www.facebook.com/sunflower.agencia?locale=es_LA" target='_blank' rel= "noopener noreferrer" aria-label='Perfil de Facebook' title='Perfil de Facebook'><img src={fb} alt="facebook" /></a>
+              <a href="https://www.linkedin.com/company/sunfloweragencia" target='_blank' rel= "noopener noreferrer" aria-label='Perfil de LinkedIn' title='Perfil de LinkedIn'><img src={lkd} alt="linkedin" /></a>
+              <a href="https://www.instagram.com/sunfloweragencia" target='_blank' rel= "noopener noreferrer" aria-label='Perfil de Instagram' title='Perfil de Instagram'><img src={ig} alt="instagram" /></a>
+              <a href="https://www.facebook.com/sunfloweragencia" target='_blank' rel= "noopener noreferrer" aria-label='Perfil de Facebook' title='Perfil de Facebook'><img src={fb} alt="facebook" /></a>
             </div>
             <div className='contact'>
               <fieldset>

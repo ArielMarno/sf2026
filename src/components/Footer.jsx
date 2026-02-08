@@ -27,9 +27,9 @@ const Footer = () => {
                             <h4>Marketing Digital</h4>
                         </div>
                         <div className='social-icons'>
-                            <a href="https://www.linkedin.com/company/sunfloweragencia/" target='_blank' rel= "noopener noreferrer" aria-label='Perfil de LinkedIn' title='Perfil de LinkedIn'><img src={lk} alt="LinkedIn" /></a>
-                            <a href="https://www.instagram.com/sunfloweragencia/" target='_blank' rel= "noopener noreferrer" aria-label='Perfil de Instagram' title='Perfil de Instagram'><img src={ig} alt="Instagram" /></a>
-                            <a href="https://www.facebook.com/sunflower.agencia?locale=es_LA" target='_blank' rel= "noopener noreferrer" aria-label='Perfil de Instagram' title='Perfil de Instagram'><img src={fb} alt="Facebook" /></a>
+                            <a href="https://www.linkedin.com/company/sunfloweragencia" target='_blank' rel= "noopener noreferrer" aria-label='Perfil de LinkedIn' title='Perfil de LinkedIn'><img src={lk} alt="LinkedIn" /></a>
+                            <a href="https://www.instagram.com/sunfloweragencia" target='_blank' rel= "noopener noreferrer" aria-label='Perfil de Instagram' title='Perfil de Instagram'><img src={ig} alt="Instagram" /></a>
+                            <a href="https://www.facebook.com/sunfloweragencia" target='_blank' rel= "noopener noreferrer" aria-label='Perfil de Instagram' title='Perfil de Instagram'><img src={fb} alt="Facebook" /></a>
                         </div>
                     </div>
                     <div className='contact-data'>

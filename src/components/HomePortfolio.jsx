@@ -49,7 +49,7 @@ const HomePortfolio = () => {
                         </div>
                         <div className='content'>
                             <h4>Costa Nord</h4>
-                            <p className='text'>Diseño y gestión de redes sociales para una empresa de mantenimiento de Mallorca. Se desarrollaron piezas gráficas para redes y material corporativo, incluyendo tarjetas de presentación, presentaciones, tarifarios y otros recursos.
+                            <p className='text'>Diseño y gestión de redes sociales para una empresa de mantenimiento de Mallorca. Se desarrollaron piezas gráficas para redes sociales, tarjetas coorporativas, presentaciones, tarifarios y otros recursos.
                             </p>
                         </div>
                     </article>
@@ -90,7 +90,7 @@ const HomePortfolio = () => {
                 </section>
 
             </div>
-            <a href="/portfolio" className='cta-btn_black'>Portafolio completo <img src={arrowb} alt="flecha" /></a>
+            <a href="https://www.behance.net/sunfloweragencia" className='cta-btn_black' target='_blank' rel= "noopener noreferrer" aria-label='Perfil de Behance' title='Perfil de Behance'>Portafolio completo <img src={arrowb} alt="flecha" /></a>
         </main>
     </div>
   )
