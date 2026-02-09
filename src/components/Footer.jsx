@@ -18,7 +18,7 @@ import ad from '../assets/platforms/ad.webp';
 const Footer = () => {
   return (
     <div className='footer'>
-        <main>
+        <div className='footer_container'>
             <article>
                 <section>
                     <div className='social'>
@@ -69,7 +69,7 @@ const Footer = () => {
                         <a href="/politicadeprivacidad">Politica de Privacidad</a>
                     </div>
                 </div>
-        </main>
+        </div>
     </div>
   )
 }

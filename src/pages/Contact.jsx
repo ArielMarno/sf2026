@@ -1,4 +1,3 @@
-import Navbar from '../components/Navbar'
 import { useState } from 'react';
 import '../styles/pages/contact.css'
 //assets
@@ -6,6 +5,9 @@ import arrowb from '../assets/arrow-black.webp';
 import star from '../assets/brand/star.webp';
 
 import ContactData from '../components/ContactData';
+import Navbar from '../components/Navbar';
+import Whatsapp from '../components/Whatsapp';
+import Footer from '../components/Footer'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -50,6 +52,7 @@ const Contact = () => {
   return (    
     <div className='contact-us'>
       <Navbar />
+      <Whatsapp />
       <main>
         <div className='title'>
           <h4><img src={star} alt="estrella" />Contactanos</h4>
@@ -102,6 +105,7 @@ const Contact = () => {
         </form>
       </main>
       <ContactData />
+      <Footer />
     </div>
   )
 }

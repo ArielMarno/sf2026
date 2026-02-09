@@ -1,10 +1,13 @@
-import Navbar from '../components/Navbar';
 import '../styles/pages/privacypolicy.css';
+import Navbar from '../components/Navbar';
+import Whatsapp from '../components/Whatsapp';
+import Footer from '../components/Footer';
 
 const Policy = () => {
   return (
     <div className='privacy-policy'>
         <Navbar />
+        <Whatsapp />
         <div className='policy' id='policy'>
             <div className='banner'>
                 <h2>Política de Privacidad</h2>
@@ -53,6 +56,7 @@ const Policy = () => {
                     </article>
                 </section>
             </div>
+            <Footer />
     </div>
   )
 }

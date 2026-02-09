@@ -1,10 +1,14 @@
-import Navbar from '../components/Navbar';
 import '../styles/pages/termsandconditions.css';
+import Navbar from '../components/Navbar';
+import Whatsapp from '../components/Whatsapp';
+import Footer from '../components/Footer';
+
 
 const TermsAndConditions = () => {
   return (
     <div className='terms-and-conditions'>
         <Navbar />
+        <Whatsapp />
         <div className='terms' id='terms'>
             <div className='banner'>
                 <h2>Terminos & Condiciones</h2>
@@ -98,6 +102,7 @@ const TermsAndConditions = () => {
                 
             </section>
         </div>
+        <Footer />
     </div>
   )
 }
