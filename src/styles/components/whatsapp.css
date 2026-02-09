@@ -1,4 +1,4 @@
-.wsp{
+.wsp-cta{
     position: fixed;
     right: 10px;
     bottom: 10px;
@@ -6,7 +6,7 @@
     z-index: 999;
 }
 
-.wsp .button {
+.wsp-cta .button {
   position: relative;
   width: 115px;
   height: 115px;
@@ -19,14 +19,14 @@
   transition: all 0.3s ease;
 }
 
-.wsp svg {
+.wsp-cta svg {
   position: absolute;
   width: 100%;
   height: 100%;
   animation: spin 15s linear infinite;
 }
 
-.wsp text {
+.wsp-cta text {
   font-family: var(--text);  
   font-size: 0.93rem;
   fill: var(--lima);
@@ -34,7 +34,7 @@
   letter-spacing: 2px;
 }
 
-.wsp .center-star img {
+.wsp-cta .center-star img {
     width: 35px;
     height: 35px;
 }
@@ -45,12 +45,12 @@
 }
 
 @media(max-width: 768px){
-    .wsp .button {
+    .wsp-cta .button {
         width: 90px;
         height: 90px;
     }
 
-    .wsp .center-star img {
+    .wsp-cta .center-star img {
         width: 25px;
         height: 25px;
     }

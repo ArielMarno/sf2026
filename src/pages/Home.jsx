@@ -1,4 +1,3 @@
-import React from 'react';
 import '../styles/pages/home.css';
 import arrow from '../assets/arrow-white.webp';
 import Liquid from '../components/Liquid';
@@ -25,11 +24,11 @@ import Footer from '../components/Footer';
 
 const Home = () => {
   return (
+    <>
+    <Navbar />
+    <Whatsapp />
     <div className='home-component'>
-      <Navbar />
-      <Whatsapp />
-      
-      <section className='hero-section' id='inicio'>
+      <div className='hero-section' id='inicio'>
         <div className='liquid-bg'>
           <Liquid
             mouseForce={20}
@@ -42,7 +41,6 @@ const Home = () => {
             resolution={0.20}
           />
         </div>
-
         <div className='hero-content'>
           <article className='title'>
             <h1>Visibilidad real para tu negocio</h1>
@@ -54,8 +52,6 @@ const Home = () => {
               Nuestros trabajos <img src={arrow} alt="flecha"/>
             </a>
           </article>
-
-          {/* Logos estáticos - Solo visibles en Desktop */}
           <div className='desktop-platforms'>
             <div className='logo-row'>
                 <img className='img-google' src={google} alt="google" />
@@ -64,24 +60,22 @@ const Home = () => {
                 <img className='img-ad' src={ad} alt="google ads" />
             </div>
           </div>
-
-          {/* Banda transcurriendo - Solo visible en Mobile */}
           <div className='mobile-platforms-band'>
               <Platforms />
           </div>
         </div>
-      </section>
-
-      <AboutUs />
-      <HomePortfolio />
-      <DesignDev />
-      <GraphicDesign />
-      <AdsContent />
-      <Ecommerce />
-      <Clients />
-      <HowWeWork />
-      <Footer />
+      </div>
     </div>
+    <AboutUs />
+    <HomePortfolio />
+    <DesignDev />
+    <GraphicDesign />
+    <AdsContent />
+    <Ecommerce />
+    <Clients />
+    <HowWeWork />
+    <Footer />
+    </>
   );
 }
 

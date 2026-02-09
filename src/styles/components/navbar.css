@@ -10,7 +10,6 @@ nav{
     justify-content: space-between;
     padding: 0 3.7rem;
     background: transparent; /* barra transparente */
-    transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 nav.scrolled {
@@ -41,7 +40,7 @@ nav .logo{
     display: none;
 }
 
-nav section{
+nav .nav_btn-container{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -248,7 +247,7 @@ nav.scrolled .cta-btn_white {
     }
 
 
-    nav section .cta-btn_white{
+    nav .nav_btn-container .cta-btn_white{
         display: none;
     }
 

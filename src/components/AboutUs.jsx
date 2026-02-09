@@ -15,7 +15,7 @@ const AboutUs = () => {
 
   return (
     <div className='about-us' id='nosotros'>
-      <main>
+      <div className='about-container'>
         <aside>
           <div className='img-box'>
             <img src={logo} alt="logo" />
@@ -49,7 +49,7 @@ const AboutUs = () => {
           </article>
           <a href="https://www.instagram.com/sunfloweragencia/" target='_blank' className='cta-btn_white'>Conocer más <img src={arrow} alt="flecha" /></a>
         </section>
-      </main>
+      </div>
     </div>
   )
 }

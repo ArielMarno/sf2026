@@ -3,7 +3,7 @@ import star from '../assets/brand/star.webp';
 
 const Whatsapp = () => {
   return (
-    <div className='wsp'>
+    <div className='wsp-cta'>
       <a href='https://wa.link/1jog8l' target='_blank' className='button'>
         <svg viewBox="0 0 200 200">
           <defs>

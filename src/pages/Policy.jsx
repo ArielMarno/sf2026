@@ -12,7 +12,7 @@ const Policy = () => {
             <div className='banner'>
                 <h2>Política de Privacidad</h2>
             </div>
-                <section>
+                <div className='policy-content'>
                     <article>
                         <div className='title'>
                             <h4>¿Qué datos recogemos?</h4>
@@ -54,7 +54,7 @@ const Policy = () => {
                             <p>Tienes derecho a saber qué datos tenemos de ti, a corregirlos o a pedirnos que los borremos. Para ejercer estos derechos, puedes escribirnos a: <span>contacto@sunfloweragencia.com</span></p>
                         </div>
                     </article>
-                </section>
+                </div>
             </div>
             <Footer />
     </div>

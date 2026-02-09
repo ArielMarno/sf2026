@@ -10,7 +10,7 @@ import ad from '../assets/platforms/ad-black.webp';
 const Platforms = () => {
   return (
     <div className='platforms'>
-        <main className='content'>
+        <div className='platforms-content'>
             <div className='item'>
                 <img className='google' src={google} alt="google negocios" />
             </div>
@@ -35,7 +35,7 @@ const Platforms = () => {
             <div className='item'>
                 <img className='ad' src={ad} alt="publicidad de google" />
             </div>      
-        </main>
+        </div>
     </div>
   )
 }

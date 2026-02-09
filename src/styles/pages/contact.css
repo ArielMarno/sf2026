@@ -35,7 +35,7 @@
   stroke: var(--blue);
 }
 
-.contact-us main{
+.contact-us .contact-container{
     min-height: 100svh;
     height: 100%;
     width: 100%;
@@ -165,7 +165,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 @media(max-width: 1000px){
 
-    .contact-us main{
+    .contact-us .contact-container{
         padding: 5rem 2rem;
     }
 
@@ -176,7 +176,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 @media(max-width: 768px){
 
-    .contact-us main{
+    .contact-us .contact-container{
         padding: 5rem 1rem;
     }
 

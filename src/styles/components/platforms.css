@@ -6,7 +6,7 @@
     background: transparent;
 }
 
-.platforms .content {
+.platforms .platforms-content {
     width: 100%;
     padding: 1.5rem 0;
     display: flex;
@@ -17,7 +17,7 @@
     width: calc(200px * 8);
 }
 
-.platforms .content .item {
+.platforms .platforms-content .item {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,7 +25,7 @@
     height: auto;
 }
 
-.platforms .content .item img {
+.platforms .platforms-content .item img {
     width: 100%;
     height: fit-content;
 }

@@ -15,7 +15,7 @@ import bs from '../assets/portfolio/bs.webp';
 const HomePortfolio = () => {
   return (
     <div className='home-portfolio' id='portafolio'>
-        <main>
+        <div className='porfolio-container'>
             <div className='title'>
                 <h4><img src={star} alt="estrella" />Nuestros trabajos</h4>
                 <h2>Creamos <span>productos</span> &<br /><span>experiencias</span> digitales</h2>
@@ -91,7 +91,7 @@ const HomePortfolio = () => {
 
             </div>
             <a href="https://www.behance.net/sunfloweragencia" className='cta-btn_black' target='_blank' rel= "noopener noreferrer" aria-label='Perfil de Behance' title='Perfil de Behance'>Portafolio completo <img src={arrowb} alt="flecha" /></a>
-        </main>
+        </div>
     </div>
   )
 }

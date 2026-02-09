@@ -53,7 +53,7 @@ const Contact = () => {
     <div className='contact-us'>
       <Navbar />
       <Whatsapp />
-      <main>
+      <div className='contact-container'>
         <div className='title'>
           <h4><img src={star} alt="estrella" />Contactanos</h4>
           <h2>Hablemos sobre<br /> tu proyecto</h2>
@@ -103,7 +103,7 @@ const Contact = () => {
           {/* Mostrar el estado del envío al usuario */}
           {status && <p className="status-message">{status}</p>}
         </form>
-      </main>
+      </div>
       <ContactData />
       <Footer />
     </div>

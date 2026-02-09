@@ -62,7 +62,7 @@
     color: var(--white);
 }
 
-.terms-and-conditions .terms section{
+.terms-and-conditions .terms .terms-content{
     padding: 3rem;
     height: auto;
     width: 100%;
@@ -138,7 +138,7 @@
         padding-left: 2rem;
     }
 
-    .terms-and-conditions .terms section{
+    .terms-and-conditions .terms .terms-content{
         padding: 3rem 2rem;
         gap: 2rem;
     }
@@ -154,7 +154,7 @@
         padding-left: 1rem;
     }
 
-    .terms-and-conditions .terms section{
+    .terms-and-conditions .terms .terms-content{
         padding: 3rem 1rem;
         gap: 3rem;
     }

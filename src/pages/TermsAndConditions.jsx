@@ -13,7 +13,7 @@ const TermsAndConditions = () => {
             <div className='banner'>
                 <h2>Terminos & Condiciones</h2>
             </div>
-            <section>
+            <div className='terms-content'>
                 <article>
                     <div className='title'>
                         <h4>Condiciones de Pago & <br /> Reserva de Servicio</h4>
@@ -100,7 +100,7 @@ const TermsAndConditions = () => {
                     </div>
                 </article>
                 
-            </section>
+            </div>
         </div>
         <Footer />
     </div>

@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    overflow-x: hidden;
     background-color: #fff;
 }
 
@@ -101,7 +101,6 @@
     .img-google { 
         height: 45px !important;
     }
-
 }
 
 @media (max-width: 1024px) {
@@ -132,7 +131,6 @@
     .liquid-bg, .desktop-platforms {
         display: none !important;
     }
-
 
     .mobile-platforms-band {
         display: block;

@@ -22,11 +22,6 @@
   scroll-behavior: smooth;
 }
 
-body{
-  position: relative;
-}
-
-
 .title h1{
   font-family: var(--title);
   font-size: clamp(2.5rem, 1.5rem + 2.0833vw, 4rem);

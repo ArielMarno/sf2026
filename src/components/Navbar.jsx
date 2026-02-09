@@ -42,13 +42,13 @@ const Navbar = () => {
         <div className='logo-container'>
           <Link to="/" className='logo' >Sunflower</Link>
         </div>
-        <section>
+        <div className='nav_btn-container'>
           <a href="/contacto" className='cta-btn_white'>Empezar un proyecto <img src={arrow} alt="flecha"/></a>
           <div className='menu'><Menu toggleMenu={toggleMenu} isOpen={isOpen}/></div>
-        </section>
+        </div>
       </nav>
 
-     <section className={`links ${isOpen ? 'open' : ''}`}>
+     <div className={`links ${isOpen ? 'open' : ''}`}>
         <div className='menu-rsp'><Menu toggleMenu={toggleMenu} isOpen={isOpen}/></div>
         <div className='links-container'>
           <div className='sections'>
@@ -83,7 +83,7 @@ const Navbar = () => {
             <a href="/contacto" onClick={handleLinkClick} className='cta-btn_black'>Empezar un proyecto <img src={arrowb} alt="flecha" /></a>
           </aside>
         </div>
-      </section>
+      </div>
     </>
   )
 }
