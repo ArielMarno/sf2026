@@ -2,7 +2,7 @@
     max-width: 100%;
     height: fit-content;
     margin: auto;
-    overflow-x: hidden;
+    overflow: hidden;
     background: transparent;
 }
 

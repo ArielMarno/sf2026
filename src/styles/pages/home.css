@@ -1,5 +1,5 @@
 .home{
-    width: 100%;
+    min-width: 100%;
     height: fit-content;
     position: relative;
     z-index: 1;

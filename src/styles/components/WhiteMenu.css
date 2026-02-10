@@ -9,9 +9,9 @@
   transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.line {
+.whiteline {
   fill: none;
-  stroke: var(--blue);
+  stroke: var(--white);
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-width: 3;
