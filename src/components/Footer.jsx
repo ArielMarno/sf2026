@@ -19,35 +19,35 @@ const Footer = () => {
   return (
     <div className='footer'>
         <div className='footer_container'>
-            <article>
-                <section>
-                    <div className='social'>
-                        <div className='logo'>
+            <div className='footer_container-display'>
+                <div className='footer_info'>
+                    <div className='footer_social'>
+                        <div className='footer_logo'>
                             <Link to="/"><img src={sf} alt="Sunflower" /></Link>
                             <h4>Marketing Digital</h4>
                         </div>
-                        <div className='social-icons'>
+                        <div className='footer_social-icons'>
                             <a href="https://www.linkedin.com/company/sunfloweragencia" target='_blank' rel= "noopener noreferrer" aria-label='Perfil de LinkedIn' title='Perfil de LinkedIn'><img src={lk} alt="LinkedIn" /></a>
                             <a href="https://www.instagram.com/sunfloweragencia" target='_blank' rel= "noopener noreferrer" aria-label='Perfil de Instagram' title='Perfil de Instagram'><img src={ig} alt="Instagram" /></a>
                             <a href="https://www.facebook.com/sunfloweragencia" target='_blank' rel= "noopener noreferrer" aria-label='Perfil de Instagram' title='Perfil de Instagram'><img src={fb} alt="Facebook" /></a>
                         </div>
                     </div>
-                    <div className='contact-data'>
+                    <div className='footer_contact-data'>
                         <h4>Contactanos</h4>
                         <a href="/contacto">Empezar un proyecto</a>
                         <p>(+54) 9 1170606852</p>
                         <p className='email'>contacto <br /> @sunfloweragencia.com</p>
                         <p>Buenos Aires, Argentina.</p>
                     </div>
-                    <div className='nav'>
+                    <div className='footer_services'>
                         <h4>Servicios</h4>
                         <Link to="/#desarrollo" className='got-to'>Diseño & <br /> Desarrollo web</Link>
                         <Link to="/#diseno-grafico" className='got-to'>Diseño gráfico</Link>
                         <Link to="/#contenidoypublicidad" className='got-to'>Contenido & <br /> Publicidad</Link>
                         <Link to="/#ecommerce" className='got-to'>Ecommerce</Link>
                     </div>
-                </section>
-                <div className='platforms'>
+                </div>
+                <div className='footer_platforms'>
                     <figure>
                         <img src={google} alt="Google" />
                     </figure>
@@ -61,7 +61,7 @@ const Footer = () => {
                         <img src={ad} alt="Google Ads" />
                     </figure>
                 </div>
-            </article>
+            </div>
             <div className='copy'>
                     <p>©{new Date().getFullYear()} Sunflower Agencia. Todos los derechos reservados.</p>
                     <div className='links'>

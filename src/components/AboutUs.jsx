@@ -16,7 +16,7 @@ const AboutUs = () => {
   return (
     <div className='about-us' id='nosotros'>
       <div className='about-container'>
-        <aside>
+        <div className='about-us_image-container'>
           <div className='img-box'>
             <img src={logo} alt="logo" />
           </div>
@@ -35,8 +35,8 @@ const AboutUs = () => {
           <div className='img-box'>
             <img src={sf} alt="sunflower" />
           </div>
-        </aside>
-        <section>
+        </div>
+        <div className='about-us_content'>
           <div className='title'>
             <div className='sub-title'><img src={star} alt="estrella" /><h4>Buenos Aires, Argentina.</h4></div>
             <h2>Sunflower <br /><span>Marketing Digital</span>.</h2>
@@ -48,7 +48,7 @@ const AboutUs = () => {
             <p className='text'>Ya sea que estés <span>adaptando tu negocio</span> al mundo digital <span>o comenzando desde cero</span>, nosotros <span>somos la mejor opción</span> para alcanzar tus objetivos.</p>
           </article>
           <a href="https://www.instagram.com/sunfloweragencia/" target='_blank' className='cta-btn_white'>Conocer más <img src={arrow} alt="flecha" /></a>
-        </section>
+        </div>
       </div>
     </div>
   )

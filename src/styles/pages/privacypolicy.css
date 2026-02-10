@@ -5,35 +5,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-}
-
-.privacy-policy nav.scrolled{
-    background-color: rgb(250, 250, 250, 0.5);
-    backdrop-filter: blur(35px); /* aparece el bg haciendo scroll */
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-.privacy-policy nav .logo{
-    color: var(--white);
-}
-
-.privacy-policy nav.scrolled .logo{
-    color: var(--blue);
-}
-
-.privacy-policy nav .cta-btn_white{
-    border-color: var(--white);
-    color: var(--white);
-} 
-
-.privacy-policy nav .line {
-  fill: none;
-  stroke: var(--white);
-}
-
-.privacy-policy nav.scrolled .line {
-  fill: none;
-  stroke: var(--blue);
+    z-index: 1;
 }
 
 .privacy-policy .policy{

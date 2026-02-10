@@ -21,8 +21,7 @@ const HomePortfolio = () => {
                 <h2>Creamos <span>productos</span> &<br /><span>experiencias</span> digitales</h2>
             </div>
             <div className='projects-container'>
-
-                <section>
+                <div className='first-col'>
                     <article>
                         <div className='project'>
                             <div className='img-container'>
@@ -53,9 +52,9 @@ const HomePortfolio = () => {
                             </p>
                         </div>
                     </article>
-                </section>
+                </div>
 
-                <section className='second-column'>
+                <div className='second-col'>
                     <article>
                         <div className='project'>
                             <div className='img-container'>
@@ -87,7 +86,7 @@ const HomePortfolio = () => {
                             <p className='text'>Planificación y diseño de redes sociales para un emprendimiento holístico de Buenos Aires. Se desarrollaron piezas de contenido, diseño de ebook e historias interactivas con gran alcance.</p>
                         </div>
                     </article>
-                </section>
+                </div>
 
             </div>
             <a href="https://www.behance.net/sunfloweragencia" className='cta-btn_black' target='_blank' rel= "noopener noreferrer" aria-label='Perfil de Behance' title='Perfil de Behance'>Portafolio completo <img src={arrowb} alt="flecha" /></a>

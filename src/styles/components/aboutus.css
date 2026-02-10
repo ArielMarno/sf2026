@@ -1,8 +1,9 @@
 .about-us{
-    max-width: 100%;
+    width: 100%;
     min-height: 100svh;
     background: var(--white);
     padding: 2rem 1rem;
+    position: relative;
 }
 
 .about-us .about-container{
@@ -16,7 +17,7 @@
     padding: 2rem 0;
 }
 
-.about-us aside{
+.about-us .about-us_image-container{
     width: 50%;
     height: 100%;
     display: grid;
@@ -55,7 +56,7 @@
   justify-self: flex-start;
 }
 
-.about-us section{
+.about-us .about-us_content{
     padding-top: 2rem;
     width: 50%;
     height: 100%;
@@ -138,13 +139,13 @@
         padding: 1rem;
     }
 
-    .about-us aside, .about-us section{
+    .about-us .about-us_image-container, .about-us .about-us_content{
         width: 100%;
         max-width: 900px;
         padding: 1rem;
     }
 
-    .about-us aside{
+    .about-us .about-us_image-container{
         min-width: auto;
         height: fit-content;
         gap: 1rem;
@@ -170,7 +171,7 @@
         padding: 0.5rem;
     }
 
-    .about-us aside, .about-us section{
+    .about-us .about-us_image-container, .about-us .about-us_content{
         width: 100%;
         max-width: 100%;
         padding: 0;
@@ -186,7 +187,7 @@
 
 @media(max-width: 480px){
     
-    .about-us aside{
+    .about-us .about-us_image-container{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(1fr, 4);
         justify-items: center;

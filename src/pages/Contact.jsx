@@ -5,7 +5,6 @@ import arrowb from '../assets/arrow-black.webp';
 import star from '../assets/brand/star.webp';
 
 import ContactData from '../components/ContactData';
-import Navbar from '../components/Navbar';
 import Whatsapp from '../components/Whatsapp';
 import Footer from '../components/Footer'
 
@@ -50,8 +49,7 @@ const Contact = () => {
   };
 
   return (    
-    <div className='contact-us'>
-      <Navbar />
+    <div className='contact-us_component'>
       <Whatsapp />
       <div className='contact-container'>
         <div className='title'>

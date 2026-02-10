@@ -1,0 +1,162 @@
+.home-component {
+    position: relative;
+    top: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.hero-section {
+    width: 100%;
+    height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.liquid-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.hero-content {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
+.hero-content .title {
+    max-width: 1200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 30vh;
+    padding: 0 1rem;
+}
+
+.hero-content .title h1 {
+    font-size: clamp(2.8rem, 2rem + 1.6667vw, 4rem);
+}
+
+.hero-content .title h4 {
+    font-size: clamp(1.3rem, 1.1667rem + 0.2778vw, 1.5rem);
+}
+
+.hero-content .title h4 span {
+    font-weight: 500;
+}
+
+.desktop-platforms {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.logo-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7rem;
+    flex-wrap: wrap;
+}
+
+.logo-row img {
+    height: 45px;
+    width: auto;
+    object-fit: contain;
+}
+
+.img-google { 
+    height: 55px !important;
+}
+
+.mobile-platforms-band {
+    display: none;
+    width: 100%;
+}
+
+
+@media(max-width: 1440px){
+
+    .logo-row {
+        gap: 5rem;
+    }
+
+    .logo-row img {
+        height: 35px;
+        width: auto;
+        object-fit: contain;
+    }
+
+    .img-google { 
+        height: 45px !important;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .hero-content .title h4 br {
+        display: none;
+    }
+
+    .logo-row {
+        gap: 3rem;
+    }
+
+    .logo-row img {
+        height: 25px;
+    }
+
+    .img-google { 
+        height: 35px !important;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .hero-content .title {
+        margin-bottom: 25vh;
+    }
+
+    .liquid-bg, .desktop-platforms {
+        display: none !important;
+    }
+
+    .mobile-platforms-band {
+        display: block;
+    }
+
+    .hero-content .title h1 {
+        max-width: 400px;
+        font-size: clamp(2.5rem, 2.1667rem + 0.6944vw, 3rem);
+        font-weight: 650;
+        background: linear-gradient(340deg, rgba(238, 130, 238, 0.86) 0%, rgba(44, 68, 153, 1) 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+      .hero-content .title h4 br {
+        display: none;
+      }
+}
+
+@media (max-width: 480px) {
+
+    .hero-content .title {
+        margin-bottom: 20vh;
+    }
+
+    .hero-content .title h4 {
+        font-size: 1.2rem;
+    }
+}

@@ -1,6 +1,6 @@
 import '../styles/components/platforms.css';
 
-//iconos plataformas
+//icons
 import google from '../assets/platforms/google-black.webp';
 import meta from '../assets/platforms/meta-black.webp';
 import nube from '../assets/platforms/nube-black.webp';
