@@ -1,3 +1,4 @@
+/* --- NAVBAR PRINCIPAL --- */
 .navbar {
     position: fixed !important;
     top: 0;
@@ -20,6 +21,7 @@
     padding: 0 3rem;
 }
 
+/* --- EFECTO SCROLL (Vidrio) --- */
 .navbar.scrolled {
     background-color: rgba(250, 250, 250, 0.5) !important;
     -webkit-backdrop-filter: blur(25px) saturate(180%);
@@ -28,11 +30,12 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
+/* --- COLORES SEGÚN TEMA --- */
 .theme-light .navbar .logo, 
 .theme-dark .navbar.scrolled .logo {
     color: var(--blue) !important;
     font-family: var(--logo);
-    font-size: clamp(1.8rem, 1.5532rem + 1.039vw, 2.8rem);
+    font-size: clamp(2.2rem, 1.8rem + 0.8333vw, 2.8rem);
     text-decoration: none;
 }
 
@@ -84,7 +87,7 @@
 .navbar-cta-btn:hover{
     background: var(--black);
     color: var(--white);
-    border: 2px solid var(--white);
+    border: 2px solid var(--black);
     font-weight: 600;
 }
 
@@ -144,6 +147,7 @@
     margin-top: 50px;
 }
 
+/* Links principales */
 .go-to_components {
     display: flex;
     flex-direction: column;
@@ -165,6 +169,7 @@
     padding-left: 15px;
 }
 
+/* Info de contacto */
 .menu-display_info {
     border-left: 1px solid rgba(255,255,255,0.1);
     padding-left: 60px;
@@ -240,7 +245,7 @@
     display: none;
 }
 
-/*responsive*/
+
 
 @media (max-width: 1440px) {
     .navbar_container {
@@ -294,9 +299,17 @@
         font-size: 1.1rem;
     }
 
+     .navbar_socials_menu{
+        margin-bottom: 0;
+     }
+
     .navbar_socials_menu img {
-        width: 40px;
-        height: 40px;
+        width: 45px;
+        height: 45px;
+    }
+
+    .navbar_socials_menu img:hover {
+        transform: none;
     }
 }
 
@@ -336,6 +349,7 @@
     .menu-display_info {
         border-left: none;
         padding-left: 0;
+        gap: 0.2rem;
     }
 
     .navbar_logo_menu img {
@@ -344,10 +358,13 @@
         margin-bottom: 5px;
     }
 
+    .navbar_logo_menu p{
+        font-size: 1.5rem;
+    }
+
     .navbar_contact_menu h5 {
         font-size: 1.5rem;
     }
-    
 
     .navbar-cta-btn {
         padding: 0.4rem 1.1rem;
@@ -368,11 +385,50 @@
     .navbar_socials_menu {
         margin-bottom: 0.5rem;
     }
+
+    .navbar .cta-btn_black{
+        display: none;
+    }
+
+    .navbar_socials_menu img {
+        width: 40px;
+        height: 40px;
+    }
 }
 
 @media (max-width: 580px){
     
+
+    .navbar_links-content {
+        gap: 2rem;
+    }
+
     .navbar-cta-btn {
         display: none;
+    }
+
+     .go-to_components{
+        gap: 0.5rem;
+    }
+
+     .go-to{
+        font-size: 1.6rem;
+    }
+
+    .navbar_logo_menu img {
+        width: 180px;
+        height: auto;
+    }
+
+    .navbar_logo_menu p{
+        font-size: 1.3rem;
+    }
+
+    .navbar_contact_menu h5 {
+        font-size: 1.2rem;
+    }
+
+    .navbar_contact_menu p{
+        font-size: 1rem;
     }
 }

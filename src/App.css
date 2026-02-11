@@ -12,7 +12,7 @@
   --black: #212121;
   --grey: #6b6b6e;
   --silver: #cacaca;
-  --gradient: linear-gradient(347deg, rgba(23, 37, 87, 1) 0%, rgba(33, 33, 33, 1) 100%);
+  --gradient: linear-gradient(rgba(33, 33, 33, 1), rgba(27, 41, 90, 1)), #212121;
 }
 
 *{

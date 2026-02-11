@@ -2,5 +2,6 @@
     min-width: 100%;
     height: fit-content;
     position: relative;
-    z-index: 1;
+    background-color: var(--white);
+    z-index: 0;
 }

@@ -26,9 +26,9 @@ const ContactData = () => {
             <fieldset>
                 <h4>Redes sociales</h4>
                 <div className='socials'>
-                    <a href="https://www.linkedin.com/company/sunfloweragencia/" target='_blank' rel="noopener noreferrer" aria-label='Perfil de LinkedIn' title='Perfil de LinkedIn'><img src={lkd} alt="LinkedIn" /></a>
-                    <a href="https://www.instagram.com/sunfloweragencia/" target='_blank' rel="noopener noreferrer" aria-label='Perfil de Instagram' title='Perfil de Instagram'><img src={ig} alt="Instragram" /></a>
-                    <a href="https://www.facebook.com/sunfloweragencia" target='_blank' rel="noopener noreferrer" aria-label='Perfil de Facebook' title='Perfil de Facebook'><img src={fbk} alt="Facebook" /></a>
+                    <a href="https://www.linkedin.com/company/sunfloweragencia/" target='_blank' rel= "noopener noreferrer" aria-label='Perfil de LinkedIn' title='Perfil de LinkedIn'><img src={lkd} alt="LinkedIn" /></a>
+                    <a href="https://www.instagram.com/sunfloweragencia/" target='_blank' rel= "noopener noreferrer" aria-label='Perfil de Instagram' title='Perfil de Instagram'><img src={ig} alt="Instragram" /></a>
+                    <a href="https://www.facebook.com/sunfloweragencia" target='_blank' rel= "noopener noreferrer" aria-label='Perfil de Facebook' title='Perfil de Facebook'><img src={fbk} alt="Facebook" /></a>
                 </div>
             </fieldset>
         </div>

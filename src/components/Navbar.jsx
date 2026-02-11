@@ -84,7 +84,7 @@ const Navbar = () => {
                                 <a href="https://facebook.com" target='_blank' rel="noreferrer" aria-label='Perfil de Facebook' title='Perfil de Facebook'><img src={fb} alt="facebook" /></a>
                             </div>
 
-                            <a href="/contacto" onClick={handleLinkClick} className='cta-btn_black'>
+                            <a href="/contacto" onClick={handleLinkClick} className='cta-btn_black nvbar-cta-btn'>
                                 Empezar un proyecto <img src={arrowb} alt="flecha" />
                             </a>
                         </div>

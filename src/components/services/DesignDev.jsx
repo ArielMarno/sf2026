@@ -28,6 +28,17 @@ const DesignDev = () => {
         triggerOnce: true, // Solo activa una vez
     });
 
+    // Dentro de tu componente DesignDev
+    const { ref: refTape, inView: inViewTape } = useInView({
+        threshold: 0.2, // Bajamos un poco el umbral para que dispare antes en móvil
+        triggerOnce: true,
+    });
+
+    const { ref: refLarge, inView: inViewLarge } = useInView({
+        threshold: 0.2,
+        triggerOnce: true,
+    });
+
   return (
     <div className='design-dev' id='desarrollo'>
         <main>
@@ -37,32 +48,35 @@ const DesignDev = () => {
             <section>
                 <div className='img-grid'>
                     <article>
-                        <div className='box'>
+                        <div className='box book'>
                             <img src={dev1} alt="desarrollo web" />
                         </div>
-                        <div className='box' ref={ref}>
-                            {inView && (
+                        {/* Usamos refTape e inViewTape aquí */}
+                        <div className='box tape' ref={refTape}>
+                            {inViewTape && (
                                 <video
-                                src={dev3}
-                                loop
-                                autoPlay
-                                muted
-                                controls={false}
-                                preload="auto"
+                                    src={dev3}
+                                    loop
+                                    autoPlay
+                                    muted
+                                    playsInline // IMPORTANTE para que auto-reproduzca en móviles
+                                    preload="auto"
                                 />
                             )}
                         </div>
                     </article>
+
                     <article className='second-row'>
-                        <div className='box large' ref={ref}>
-                           {inView && (
+                        {/* Usamos refLarge e inViewLarge aquí */}
+                        <div className='box large' ref={refLarge}>
+                            {inViewLarge && (
                                 <video
-                                src={dev2}
-                                loop
-                                autoPlay
-                                muted
-                                controls={false}
-                                preload="auto"
+                                    src={dev2}
+                                    loop
+                                    autoPlay
+                                    muted
+                                    playsInline // IMPORTANTE para móviles
+                                    preload="auto"
                                 />
                             )}
                         </div>

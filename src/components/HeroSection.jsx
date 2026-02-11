@@ -1,11 +1,11 @@
 import '../styles/components/herocomponent.css';
 import arrow from '../assets/arrow-white.webp';
 
-//Components
+//components
 import Liquid from '../components/Liquid';
 import Platforms from '../components/Platforms';
 
-//Icons
+//icons
 import google from '../assets/platforms/google-black.webp';
 import meta from '../assets/platforms/meta-black.webp';
 import nube from '../assets/platforms/nube-black.webp';

@@ -1,4 +1,5 @@
 .ads-content{
+  z-index: 1;
   background: var(--white);
   width: 100%;
   min-height: 100svh;
@@ -257,14 +258,13 @@
     height: 100%;
   }
 
-  .ads-content .box{
+  .ads-content .box.tape{
     width: 100%;
     height: 300px;
   }
 
   .ads-content .box.large, .ads-content .box.small{
-    width: 100%;
-    height: 300px;
+    display: none;
   }
 
   .service-name{

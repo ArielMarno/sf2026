@@ -174,8 +174,6 @@
     color: var(--lima);
 }
 
-/*responsive*/
-
 @media(max-width: 1440px){
     
     .footer .footer_container{

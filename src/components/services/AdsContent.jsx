@@ -43,7 +43,7 @@ const AdsContent = () => {
                         </div>
                     </article>
                     <article className='second-row'>
-                        <div className='box' ref={ref}>
+                        <div className='box tape' ref={ref}>
                             {inView && (
                                 <video
                                 src={cm3}

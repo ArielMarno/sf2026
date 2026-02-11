@@ -1,4 +1,5 @@
 .home-portfolio{
+    z-index: 1;
     width: 100%;
     min-height: 100svh;
     padding: 3rem;
@@ -153,8 +154,6 @@
 .home-portfolio .porfolio-container a{
     align-self:center;
 }
-
-/*responsive*/
 
 @media(max-width:1500px){
 

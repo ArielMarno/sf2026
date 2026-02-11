@@ -54,7 +54,7 @@ const GraphicDesign = () => {
                         </div>
                     </article>
                     <article>
-                        <div className='box small' ref={ref}>
+                        <div className='box small tape' ref={ref}>
                             {inView && (
                                 <video
                                 src={dg2}

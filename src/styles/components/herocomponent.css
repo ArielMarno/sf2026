@@ -1,4 +1,5 @@
 .home-component {
+    z-index: 1;
     position: relative;
     top: 0;
     width: 100%;
@@ -84,7 +85,6 @@
     width: 100%;
 }
 
-/*responsive*/
 
 @media(max-width: 1440px){
 

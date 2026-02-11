@@ -1,10 +1,10 @@
 import '../styles/components/homeportfolio.css';
 
-//Assets
+//assets
 import arrowb from '../assets/arrow-black.webp';
 import star from '../assets/brand/star.webp';
 
-//Projects
+//projects
 import m44 from '../assets/portfolio/m44.webp';
 import cnord from '../assets/portfolio/cnord.webp';
 import zarch from '../assets/portfolio/zarch.webp';
@@ -89,7 +89,7 @@ const HomePortfolio = () => {
                 </div>
 
             </div>
-            <a href="https://www.behance.net/sunfloweragencia" className='cta-btn_black' target='_blank' rel="noopener noreferrer" aria-label='Perfil de Behance' title='Perfil de Behance'>Portafolio completo <img src={arrowb} alt="flecha" /></a>
+            <a href="https://www.behance.net/sunfloweragencia" className='cta-btn_black' target='_blank' rel= "noopener noreferrer" aria-label='Perfil de Behance' title='Perfil de Behance'>Portafolio completo <img src={arrowb} alt="flecha" /></a>
         </div>
     </div>
   )
