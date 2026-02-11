@@ -1,15 +1,15 @@
 import '../styles/components/footer.css';
 import { Link } from 'react-router-dom';
 
-//logo
+//Logo
 import sf from '../assets/brand/sunflower-white.webp'
 
-//socials
+//Socials
 import ig from '../assets/socials/instagram.webp';
 import fb from '../assets/socials/facebook.webp';
 import lk from '../assets/socials/linkedin.webp';
 
-//platforms 
+//Platforms 
 import google from '../assets/platforms/google.webp';
 import meta from '../assets/platforms/meta.webp';
 import nube from '../assets/platforms/nube.webp';
@@ -27,9 +27,9 @@ const Footer = () => {
                             <h4>Marketing Digital</h4>
                         </div>
                         <div className='footer_social-icons'>
-                            <a href="https://www.linkedin.com/company/sunfloweragencia" target='_blank' rel= "noopener noreferrer" aria-label='Perfil de LinkedIn' title='Perfil de LinkedIn'><img src={lk} alt="LinkedIn" /></a>
-                            <a href="https://www.instagram.com/sunfloweragencia" target='_blank' rel= "noopener noreferrer" aria-label='Perfil de Instagram' title='Perfil de Instagram'><img src={ig} alt="Instagram" /></a>
-                            <a href="https://www.facebook.com/sunfloweragencia" target='_blank' rel= "noopener noreferrer" aria-label='Perfil de Instagram' title='Perfil de Instagram'><img src={fb} alt="Facebook" /></a>
+                            <a href="https://www.linkedin.com/company/sunfloweragencia" target='_blank' rel="noopener noreferrer" aria-label='Perfil de LinkedIn' title='Perfil de LinkedIn'><img src={lk} alt="LinkedIn" /></a>
+                            <a href="https://www.instagram.com/sunfloweragencia" target='_blank' rel="noopener noreferrer" aria-label='Perfil de Instagram' title='Perfil de Instagram'><img src={ig} alt="Instagram" /></a>
+                            <a href="https://www.facebook.com/sunfloweragencia" target='_blank' rel="noopener noreferrer" aria-label='Perfil de Instagram' title='Perfil de Instagram'><img src={fb} alt="Facebook" /></a>
                         </div>
                     </div>
                     <div className='footer_contact-data'>

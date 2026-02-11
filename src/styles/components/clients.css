@@ -44,6 +44,8 @@
     margin-top: 1.5rem;
 }
 
+/*responsive*/
+
 @media (max-width: 768px) {
 
     .clients .title{

@@ -96,6 +96,8 @@
   line-height: 1.6;
 }
 
+/*responsive*/
+
 @media(max-width: 768px) {
   
   .how-we-work-wrapper {

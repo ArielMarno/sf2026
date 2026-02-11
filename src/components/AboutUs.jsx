@@ -47,7 +47,7 @@ const AboutUs = () => {
             <p className='text'>Trabajamos en conjunto con vos creando un <span>perfil profesional y confiable</span> de tu marca en las <span>plataformas más importantes</span>.</p>
             <p className='text'>Ya sea que estés <span>adaptando tu negocio</span> al mundo digital <span>o comenzando desde cero</span>, nosotros <span>somos la mejor opción</span> para alcanzar tus objetivos.</p>
           </article>
-          <a href="https://www.instagram.com/sunfloweragencia/" target='_blank' className='cta-btn_white'>Conocer más <img src={arrow} alt="flecha" /></a>
+          <a href="https://www.instagram.com/sunfloweragencia/" target='_blank' rel="noreferrer" aria-label='Perfil de Instagram' title='Perfil de Instagram' className='cta-btn_white'>Conocer más <img src={arrow} alt="flecha" /></a>
         </div>
       </div>
     </div>

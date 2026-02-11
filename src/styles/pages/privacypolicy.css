@@ -81,6 +81,8 @@
     font-weight: 500;
 }
 
+/*responsive*/
+
 @media(max-width: 1440px){
 
     .privacy-policy article{

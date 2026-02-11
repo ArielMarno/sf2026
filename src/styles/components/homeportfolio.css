@@ -154,6 +154,8 @@
     align-self:center;
 }
 
+/*responsive*/
+
 @media(max-width:1500px){
 
     .home-portfolio{

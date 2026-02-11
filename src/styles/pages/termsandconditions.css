@@ -93,6 +93,8 @@
     font-weight: 500;
 }
 
+/*responsive*/
+
 @media(max-width: 1440px){
 
     .terms-and-conditions article{

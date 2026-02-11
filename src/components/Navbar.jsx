@@ -74,7 +74,7 @@ const Navbar = () => {
                                 </div>
                                 <div className='contact-item'>
                                     <h5>E-mail</h5>
-                                    <p>contacto@sunfloweragencia.com</p>
+                                    <p>contacto<br />@sunfloweragencia.com</p>
                                 </div>
                             </div>
 
