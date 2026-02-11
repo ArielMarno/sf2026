@@ -124,6 +124,7 @@
 @media (max-width: 768px) {
 
     .hero-content .title {
+        gap:1rem;
         margin-bottom: 25vh;
     }
 
@@ -144,7 +145,11 @@
         -webkit-text-fill-color: transparent;
     }
 
-      .hero-content .title h4 br {
+    .hero-content .title h4{
+        max-width: 500px;
+    }
+
+    .hero-content .title h4 br {
         display: none;
       }
 }

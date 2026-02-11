@@ -46,11 +46,10 @@ const Navbar = () => {
 
             {/* Overlay del Menú Desplegable */}
             <div className={`navbar-links ${isOpen ? 'open' : ''}`}>
-                <div className='navbar_links-wrapper'>
-                    <div className='menu-rsp-container'>
+                <div className='menu-rsp-container'>
                         <WhiteMenu toggleMenu={toggleMenu} isOpen={isOpen} />
-                    </div>
-                    
+                </div>
+                <div className='navbar_links-wrapper'>    
                     <div className='navbar_links-content'>
                         <div className='go-to_components'>
                             <Link to="/#inicio" onClick={handleLinkClick} className='go-to'>Inicio</Link>
@@ -80,9 +79,9 @@ const Navbar = () => {
                             </div>
 
                             <div className='navbar_socials_menu'>
-                                <a href="https://linkedin.com" target='_blank' rel="noreferrer"><img src={lkd} alt="linkedin" /></a>
-                                <a href="https://instagram.com" target='_blank' rel="noreferrer"><img src={ig} alt="instagram" /></a>
-                                <a href="https://facebook.com" target='_blank' rel="noreferrer"><img src={fb} alt="facebook" /></a>
+                                <a href="https://linkedin.com" target='_blank' rel="noreferrer" aria-label='Perfil de LinkedIn' title='Perfil de LinkedIn'><img src={lkd} alt="linkedin" /></a>
+                                <a href="https://instagram.com" target='_blank' rel="noreferrer" aria-label='Perfil de Instagram' title='Perfil de Instagram'><img src={ig} alt="instagram" /></a>
+                                <a href="https://facebook.com" target='_blank' rel="noreferrer" aria-label='Perfil de Facebook' title='Perfil de Facebook'><img src={fb} alt="facebook" /></a>
                             </div>
 
                             <a href="/contacto" onClick={handleLinkClick} className='cta-btn_black'>

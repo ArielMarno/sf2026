@@ -23,8 +23,8 @@
 
 /* --- EFECTO SCROLL (Vidrio) --- */
 .navbar.scrolled {
-    background-color: rgba(250, 250, 250, 0.7) !important;
-    -webkit-backdrop-filter: blur(35px) saturate(180%);
+    background-color: rgba(250, 250, 250, 0.5) !important;
+    -webkit-backdrop-filter: blur(25px) saturate(180%);
     backdrop-filter: blur(35px) saturate(180%);
     height: 80px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -57,7 +57,7 @@
 .navbar-cta-btn {
     width: fit-content;
     display: flex;
-    padding: 0.5rem 1.2rem;
+    padding: 0.7rem 1.2rem;
     flex-direction: row;
     align-items: center;
     gap: 0.5rem;
@@ -68,8 +68,14 @@
     font-size: 1.1rem;
     font-weight: 500;
     text-decoration: none;
-    transition: all 0.3s ease-out;
     color: var(--black);
+    transition: all 0.1s ease-in-out;
+}
+
+.navbar.scrolled .navbar-cta-btn{
+    background: var(--black);
+    color: var(--white);
+    border: 1px solid var(--black);
 }
 
 .navbar-cta-btn img{
@@ -81,7 +87,7 @@
 .navbar-cta-btn:hover{
     background: var(--black);
     color: var(--white);
-    border-color: var(--black);
+    border: 2px solid var(--white);
     font-weight: 600;
 }
 
@@ -89,30 +95,40 @@
     display: flex;
 }
 
+.theme-dark .navbar_btn-container .navbar-cta-btn {
+    background: transparent;
+    color: var(--white);
+    border: 1px solid var(--white);
+}
 
-/* --- OVERLAY DEL MENÚ (Capa que se abre) --- */
+.theme-dark .navbar.scrolled .navbar_btn-container .navbar-cta-btn{
+    background: var(--black);
+    color: var(--white);
+    border: 1px solid var(--black);
+}
+
 .navbar-links {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: #172557; /* Azul oscuro de la marca */
+    background: var(--gradient);
     z-index: 10000;
-    padding: 40px 5%;
-    transform: translateX(100%); /* Escondido a la derecha */
+    padding: 1rem 3rem;
+    transform: translateX(100%);
     transition: transform 0.6s cubic-bezier(0.77, 0.2, 0.05, 1.0);
     display: flex;
     flex-direction: column;
 }
 
 .navbar-links.open {
-    transform: translateX(0); /* Entra a pantalla completa */
+    transform: translateX(0);
 }
 
 .navbar_links-wrapper {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1000px;
     margin: 0 auto;
     height: 100%;
     display: flex;
@@ -120,15 +136,15 @@
 }
 
 .menu-rsp-container {
-    align-self: flex-end; /* Alinea la X a la derecha */
-    margin-bottom: 20px;
+    align-self: flex-end;
+    margin-bottom: 50px;
 }
 
 .navbar_links-content {
     display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    gap: 60px;
-    margin-top: 40px;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 50px;
 }
 
 /* Links principales */
@@ -138,12 +154,13 @@
     gap: 10px;
 }
 
-.go-to {
+.go-to{
+    width: fit-content;
     font-family: var(--title);
-    font-size: clamp(1.8rem, 4vw, 3.5rem);
+    font-size: clamp(1.8rem, 1.4545rem + 1.4545vw, 3.2rem);
     color: var(--white);
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 550;
     transition: 0.3s;
 }
 
@@ -162,24 +179,47 @@
     color: var(--white);
 }
 
+.navbar_logo_menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
 .navbar_logo_menu img {
-    width: 180px;
+    width: 260px;
+    height: auto;
     margin-bottom: 10px;
+}
+
+.navbar_logo_menu p{
+    font-family: var(--title);
+    font-size: 1.8rem;
+    font-weight: 500;
 }
 
 .navbar_contact_menu h5 {
     color: var(--silver);
     font-family: var(--text);
+    font-size: 2rem;
+    font-weight: 500;
     margin-bottom: 5px;
+}
+
+.navbar_contact_menu p{
+    font-family: var(--text);
+    font-size: 1.3rem;
 }
 
 .navbar_socials_menu {
     display: flex;
-    gap: 20px;
+    gap: 0.7rem;
+    margin-bottom: 1rem;
 }
 
 .navbar_socials_menu img {
-    width: 24px;
+    width: 49px;
+    height: 49px;
     transition: 0.3s;
 }
 
@@ -197,7 +237,21 @@
     font-weight: 600;
 }
 
-/* --- RESPONSIVE --- */
+
+
+@media (max-width: 1440px) {
+    .navbar_container {
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .navbar_container {
+        padding: 0 1rem;
+    }
+}
+
+
 @media (max-width: 900px) {
     .navbar_links-content {
         grid-template-columns: 1fr;
@@ -212,5 +266,30 @@
     
     .go-to {
         font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .navbar-cta-btn {
+        padding: 0.4rem 1.1rem;
+        border-radius: 7px;
+        font-size: 1rem;
+    }
+
+    .navbar-cta-btn:hover {
+        background: transparent;
+        color: var(--black);
+        font-weight: 500;
+    }
+
+    .navbar-cta-btn:hover img {
+        display: none;
+    }
+}
+
+@media (max-width: 580px){
+    .navbar-cta-btn {
+        display: none;
     }
 }

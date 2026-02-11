@@ -33,7 +33,7 @@ const HeroSection = () => {
             <h1>Visibilidad real para tu negocio</h1>
             <h4>
               Generamos <span>interés y confianza</span> en tu marca mostrándola <span>de la forma correcta</span>. 
-              <br />Nos ocupamos de acercarte a tu público para que te encargues de lo más importante.
+              <br /> Nos ocupamos de acercarte a tu público para que te encargues de lo más importante.
             </h4>
             <a href="/#portafolio" className='cta-btn_white'>
               Nuestros trabajos <img src={arrow} alt="flecha"/>
