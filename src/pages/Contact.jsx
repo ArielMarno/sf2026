@@ -53,7 +53,7 @@ const Contact = () => {
       <Whatsapp />
       <div className='contact-container'>
         <div className='title'>
-          <h4><img src={star} alt="estrella" />Contactanos</h4>
+          <h4><img src={star} alt="estrella" />Contáctanos</h4>
           <h2>Hablemos sobre<br /> tu proyecto</h2>
         </div>
 
@@ -64,7 +64,7 @@ const Contact = () => {
               type="text" 
               name='nombre' 
               id='nombre' 
-              placeholder='Como es tu nombre?' 
+              placeholder='Cómo es tu nombre?' 
               value={formData.nombre} 
               autoComplete="off" 
               onChange={handleInputChange} 
@@ -92,7 +92,7 @@ const Contact = () => {
             />
           </section>
           
-          <p>Este formulario recolecta la información ingresada unicamente para poder establecer contacto. Podes revisar nuestra <a href="/politicadeprivacidad">Politica de Privacidad</a> para entender mejor como utilizamos y protejemos tus datos.</p>
+          <p>Este formulario recolecta la información ingresada únicamente para poder establecer contacto. Podes revisar nuestra <a href="/politicadeprivacidad">Política de Privacidad</a> para entender mejor como utilizamos y protegemos tus datos.</p>
           
           <button type='submit' className='cta-btn_black'>
             Enviar formulario <img src={arrowb} alt="flecha" />

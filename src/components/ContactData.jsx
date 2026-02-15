@@ -17,7 +17,7 @@ const ContactData = () => {
         <div className='content'>
             <fieldset>
                 <h4>Teléfono</h4>
-                <h2>(+54) 9 1170606852</h2>
+                <h2>(+54) 9 11 7060-6852</h2>
             </fieldset>
             <fieldset className='email'>
                 <h4>E-mail</h4>

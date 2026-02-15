@@ -33,10 +33,10 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className='footer_contact-data'>
-                        <h4>Contactanos</h4>
+                        <h4>Contáctanos</h4>
                         <a href="/contacto">Empezar un proyecto</a>
                         <p>(+54) 9 1170606852</p>
-                        <p className='email'>contacto <br /> @sunfloweragencia.com</p>
+                        <p className='email'>contacto<br />@sunfloweragencia.com</p>
                         <p>Buenos Aires, Argentina.</p>
                     </div>
                     <div className='footer_services'>
@@ -66,7 +66,7 @@ const Footer = () => {
                     <p>©{new Date().getFullYear()} Sunflower Agencia. Todos los derechos reservados.</p>
                     <div className='links'>
                         <a href="/terminosycondiciones">Terminos de Uso</a>
-                        <a href="/politicadeprivacidad">Politica de Privacidad</a>
+                        <a href="/politicadeprivacidad">Política de Privacidad</a>
                     </div>
                 </div>
         </div>
